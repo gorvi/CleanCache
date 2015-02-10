@@ -1,6 +1,5 @@
 package com.gudap.cleancache;
 
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 /**
