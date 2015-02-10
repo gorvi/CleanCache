@@ -3,17 +3,20 @@ package com.gudap.cleancache;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Rect;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.Window;
 import android.widget.Toast;
 
 public abstract class BaseActivity extends Activity {
+    /**
+     * 屏幕宽度
+     */
     protected int mScreenWidth;
+    /**
+     * 屏幕高度
+     */
     protected int mScreenHight;
 
     @Override
@@ -68,7 +71,6 @@ public abstract class BaseActivity extends Activity {
     /**
      * 获取当前状态栏高度
      *
-     * @return
      */
     public int getStateBar() {
         Rect frame = new Rect();

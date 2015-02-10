@@ -3,10 +3,6 @@ package com.gudap.cleancache;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 
 /**
  * 闪屏页面
