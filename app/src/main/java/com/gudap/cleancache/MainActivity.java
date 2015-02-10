@@ -1,5 +1,6 @@
 package com.gudap.cleancache;
 
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 /**
@@ -7,7 +8,7 @@ import android.widget.RelativeLayout;
  */
 public class MainActivity extends BaseActivity {
 
-    RelativeLayout relativeLayout_progressBar;
+    RelativeLayout proBar;
     @Override
     public void setContentView() {
         setContentView(R.layout.activity_main);
@@ -16,7 +17,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initViews() {
-        relativeLayout_progressBar = (RelativeLayout) findViewById(R.id.relativeLayout_progressBar);
+        proBar = (RelativeLayout) findViewById(R.id.proBar);
 
 
     }
