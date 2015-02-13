@@ -12,7 +12,7 @@
     <file url="file://$PROJECT_DIR$/app/src/main/res/anim/zoomout_right.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/splash.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/item_list_cache.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/list_item_clean_item.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/list_item_cache.xml" charset="GBK" />
   </component>
 </project>
 
