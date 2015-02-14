@@ -2,16 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="60dip"
-    android:background="@drawable/main_item_selector" >
+    android:background="@drawable/item_selector" >
 
     <ImageView
-        android:id="@+id/iv_clean_item_icon"
+        android:id="@+id/item_list_cache_iv_appicon"
         android:layout_width="48dip"
         android:layout_height="48dip"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:layout_marginLeft="3dip"
-        android:src="@drawable/ic_clean_cache" />
+        android:src="@drawable/ic_launcher" />
 
     <!--    <CheckBox
            android:focusable="false"
@@ -26,10 +26,10 @@
 
     <TextView
         android:layout_marginTop="5dip"
-        android:id="@+id/tv_clean_item_name"
+        android:id="@+id/item_list_cache_tv_appname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/iv_clean_item_icon"
+        android:layout_toRightOf="@+id/item_list_cache_iv_appicon"
         android:text="AppName"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#000000" />
@@ -37,10 +37,10 @@
     <TextView
         android:layout_marginLeft="10dip"
         android:layout_marginBottom="5dip"
-        android:id="@+id/tv_clean_item_mem"
+        android:id="@+id/item_list_cache_tv_cachesize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tv_clean_item_name"
+        android:layout_alignLeft="@+id/item_list_cache_tv_appname"
         android:layout_alignParentBottom="true"
         android:text="CacheSize"
         android:textAppearance="?android:attr/textAppearanceSmall"

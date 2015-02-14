@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <item
+        android:drawable="@color/green"
+        android:state_pressed="true" />
+    <!-- pressed -->
+    <item
+        android:drawable="@color/green"
+        android:state_focused="true" />
+    <!-- focused -->
+    <item android:drawable="@color/white" />
+    <!-- default -->
+
+</selector>

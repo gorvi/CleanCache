@@ -10,7 +10,7 @@ public class CacheInfo {
     String appname;
     long cachesize;
     String cacheSizeText;
-    Drawable icon;
+    Drawable appicon;
     String packageName;
 
     public String getAppname() {
@@ -28,12 +28,12 @@ public class CacheInfo {
     ApplicationInfo ainfo;
 
     public CacheInfo(Context context, String appname, long cachesize,
-                     Drawable icon2, String pname, ApplicationInfo ainfo) {
+                     Drawable appicon2, String pname, ApplicationInfo ainfo) {
         super();
         this.appname = appname;
         this.cachesize = cachesize;
         this.cacheSizeText = Formatter.formatFileSize(context, cachesize);
-        this.icon = icon2;
+        this.appicon = appicon2;
         this.ainfo = ainfo;
         packageName = pname;
     }
@@ -58,12 +58,12 @@ public class CacheInfo {
         this.cacheSizeText = cacheSizeText;
     }
 
-    public Drawable getIcon() {
-        return icon;
+    public Drawable getAppicon() {
+        return appicon;
     }
 
-    public void setIcon(Drawable icon) {
-        this.icon = icon;
+    public void setAppicon(Drawable appicon) {
+        this.appicon = appicon;
     }
 
 

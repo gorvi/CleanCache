@@ -1,5 +1,10 @@
 package com.gudap.cleancache;
 
+import static com.gudap.cleancache.R.id.item_list_cache_iv_appicon;
+import static com.gudap.cleancache.R.id.item_list_cache_tv_appname;
+import static com.gudap.cleancache.R.id.item_list_cache_tv_cachesize;
+
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 
 import com.gudap.cleancache.adapter.BaseAdapterHelper;
@@ -10,6 +15,8 @@ import com.gudap.cleancache.bean.CacheInfo;
  * Created by ghw on 2015/2/10.
  */
 public class MainActivity extends BaseActivity {
+
+    ListView listView_cache;
 
     RelativeLayout progressBar;
 
@@ -24,6 +31,9 @@ public class MainActivity extends BaseActivity {
     @Override
     public void initViews() {
         progressBar = (RelativeLayout) findViewById(R.id.progressBar);
+        listView_cache = (ListView)findViewById(R.id.list_cache);
+
+
     }
 
     @Override
@@ -37,11 +47,9 @@ public class MainActivity extends BaseActivity {
             cacheInfoAdapter = new QuickAdapter<CacheInfo>(this, R.layout.item_list_cache) {
                 @Override
                 protected void convert(BaseAdapterHelper helper, CacheInfo cacheInfo) {
-                    helper.setImageResource()
-                    helper.setText(tv_title, lost.getTitle())
-                            .setText(tv_describe, lost.getDescribe())
-                            .setText(tv_time, lost.getCreatedAt())
-                            .setText(tv_photo, lost.getPhone());
+                    helper.setImageDrawable(item_list_cache_iv_appicon, cacheInfo.getAppicon())
+                            .setText(item_list_cache_tv_appname, cacheInfo.getAppname())
+                            .setText(item_list_cache_tv_cachesize, cacheInfo.getCacheSizeText());
                 }
             };
         }
