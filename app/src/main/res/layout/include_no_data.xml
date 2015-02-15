@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/layout_no"
+    android:id="@+id/include_no_data_llayout_nodata"
     android:visibility="gone"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
     <TextView
-        android:id="@+id/linearLayout_textView_noData"
+        android:id="@+id/include_no_data_tv_nodata"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
